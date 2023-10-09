@@ -1,3 +1,4 @@
+import { AcademyFill } from 'gthibaud-icons-react';
 import { Button } from '../Button/text';
 import { ButtonUnstyled } from '../Button/unstyled';
 
@@ -11,7 +12,11 @@ export const Header = () => {
                         ariaLabel="Home"
                     >
                         <p className="font-semibold text-xl text-left tracking-tight">
-                            Notion Time Machine
+                            Creastel Academy
+                            <AcademyFill
+                                size="24px"
+                                className="fill-paletteBlue"
+                            />
                         </p>
                     </ButtonUnstyled>
                 </div>
@@ -20,7 +25,7 @@ export const Header = () => {
                         to="/#download"
                         className="bg-textBody hover:bg-textBody rounded-md"
                     >
-                        Join the beta
+                        Join the program
                     </Button>
                 </div>
             </nav>

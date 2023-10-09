@@ -1,5 +1,12 @@
 import { StaticImage } from 'gatsby-plugin-image';
-import { ChevronRight, LockDesktop, LockShield, Megaphone, Sparkles } from 'gthibaud-icons-react';
+import {
+    AcademyFill,
+    ChevronRight,
+    HammerFill,
+    Laurels,
+    Megaphone,
+    Sparkles,
+} from 'gthibaud-icons-react';
 import { Toaster } from 'react-hot-toast';
 import { ButtonUnstyled } from '../components/Button/unstyled';
 import { Columns } from '../components/Container/Columns';
@@ -26,33 +33,33 @@ const Main = () => {
         <div className="flex flex-col align-center">
             <Header />
             <MainContainer>
-                <BigTitle>Making your Notion data safe</BigTitle>
+                <BigTitle>Become the architect of tomorrow's apps</BigTitle>
                 <SubTitle>
                     <span>
-                        We backup your Notion workspaces
+                        We teach developers to build applications
                         <br />
-                        to secure things that matter
-                        <Sparkles className="fill-palettePurple" />
+                        that will shape the future
+                        <HammerFill className="fill-palettePurple" />
                     </span>
                 </SubTitle>
                 <div className="flex justify-center px-4 mt-8">
                     <TiltingContainer>
                         <StaticImage
                             className="max-w-screen-lg"
-                            src="../../static/images/desktop.png"
+                            src="../../static/images/desktop.jpg"
                             alt="Desktop Klipse interface."
                         />
                     </TiltingContainer>
                 </div>
                 <SectionTitle>
                     <span>
-                        Secure things that matter
-                        <LockShield className="fill-paletteRed" />
+                        Our mission
+                        <Sparkles className="fill-paletteRed" />
                     </span>
                 </SectionTitle>
                 <SubTitle>
-                    Would you be able to keep your business running if you lost access to Notion
-                    tomorrow morning?
+                    Our mission at Creastel Academy is to train the next generation of SaaS and
+                    mobile application makers.
                 </SubTitle>
                 <CardSection>
                     <Problem
@@ -65,8 +72,8 @@ const Main = () => {
                                 backgroundColor={BACKGROUND_DEFAULT}
                             />
                         }
-                        title="Crucial data"
-                        description="Your best ideas are stored in Notion, perhaps even your customers, contracts, strategy."
+                        title="Web applications"
+                        description="Creastel Academy is dedicated to applications development using web technologies."
                     />
                     <Problem
                         image={
@@ -78,8 +85,8 @@ const Main = () => {
                                 backgroundColor={BACKGROUND_DEFAULT}
                             />
                         }
-                        title="Critical risk"
-                        description="Mistakes can happen: deleting an access, forgetting to renew a license: 0 risk don’t exists."
+                        title="An holistic approach"
+                        description="From needs identification to market launch through design and development, we teach how to build successful apps."
                     />
                     <Problem
                         image={
@@ -91,14 +98,14 @@ const Main = () => {
                                 backgroundColor={BACKGROUND_DEFAULT}
                             />
                         }
-                        title="Don’t depend on Notion"
-                        description="Don't let your business, your studies or your life depend on Notion, mitigate the risk."
+                        title="Cutting-edge tech"
+                        description="Our teaching focuses on the most advanced, multi-platform technologies (mobile, desktop, VR)."
                     />
                 </CardSection>
                 <SectionTitle>
                     <span>
-                        We backup every block in a secure vault
-                        <LockDesktop className="fill-paletteBlue" />
+                        Why choose Creastel Academy?
+                        <Laurels className="fill-paletteYellow" />
                     </span>
                 </SectionTitle>
                 <Feature
@@ -112,12 +119,13 @@ const Main = () => {
                             layout="fixed"
                         />
                     }
-                    title="Automated backups, simple as that"
+                    title="Learning by doing"
                     description={
                         <>
-                            Connect your workspace to Notion Time Machine and that's it! We'll take
-                            care of backing up all your data at regular intervals, and alert you if
-                            an error occurs.
+                            We believe that the best way to learn is to practice. That's why our
+                            courses are based on a practical approach, with many exercises and
+                            projects. Students are encouraged to work on their own projects and
+                            bring them to class.
                         </>
                     }
                 />
@@ -125,55 +133,46 @@ const Main = () => {
                     image={
                         <StaticImage
                             src="../../static/images/files.jpg"
-                            alt="Files image"
+                            alt="Pedagogical expertise"
                             height={120}
                             placeholder="none"
                             backgroundColor={BACKGROUND_DEFAULT}
                             layout="fixed"
                         />
                     }
-                    title="High-level safety and resilience "
-                    description="Notion Time Machine encrypts all backups and exchanges between Notion APIs and our system. We offer AES-256 encryption for all backups, making it impossible for us to decrypt them, even by us."
+                    title="Pedagogical expertise"
+                    description="Our courses are designed by pedagogical experts and are based on the latest research in cognitive science. We use the latest tools to make learning fun and effective."
                     inversedDirection
                 />
                 <Feature
                     image={
                         <StaticImage
                             src="../../static/images/computer.jpg"
-                            alt="Computer image"
+                            alt="Networking and collaboration"
                             height={120}
                             placeholder="none"
                             backgroundColor={BACKGROUND_DEFAULT}
                             layout="fixed"
                         />
                     }
-                    title="Manage backups, restore data anytime"
-                    description="Thanks to the administration portal, you can define your backup and data retention strategies. In the blink of an eye, you can view your backups, go back in time and restore older versions."
+                    title="Networking and collaboration"
+                    description="Students have the opportunity to connect with other students and also entreprise to collaborate on projects. We believe that the best way to learn is to learn from others."
                 />
-                <SectionTitle>Our plans</SectionTitle>
+                <SectionTitle>
+                    <span>
+                        Our programs
+                        <AcademyFill className="fill-paletteGreen" />
+                    </span>
+                </SectionTitle>
                 <SubTitle>
-                    No commitments or hidden costs,
-                    <br /> we have plans for everyone!
+                    For more information about our programs, please contact us by filling out the
+                    form below.
                 </SubTitle>
                 <br />
                 <PlanSection>
                     <Plan
                         to="/#download"
-                        title="Monthly backup"
-                        image={
-                            <StaticImage
-                                src="../../static/images/monthly.png"
-                                alt="Backup image"
-                                height={140}
-                                placeholder="none"
-                            />
-                        }
-                        description="Ideal for individuals, students, or families that want to stay zen"
-                        price="2$ / month"
-                    />
-                    <Plan
-                        to="/#download"
-                        title="Weekly backup"
+                        title="Full-time program"
                         image={
                             <StaticImage
                                 src="../../static/images/weekly.png"
@@ -182,12 +181,24 @@ const Main = () => {
                                 placeholder="none"
                             />
                         }
-                        description="Ideal for startups who take care of their data on a limited budget"
-                        price="5$ / month"
+                        description="One-year program to become a complete app builder"
                     />
                     <Plan
                         to="/#download"
-                        title="Daily backup"
+                        title="Apprenticeship"
+                        image={
+                            <StaticImage
+                                src="../../static/images/monthly.png"
+                                alt="Backup image"
+                                height={140}
+                                placeholder="none"
+                            />
+                        }
+                        description="Ideal for students that want to learn with an income source"
+                    />
+                    <Plan
+                        to="/#download"
+                        title="Specific courses"
                         image={
                             <StaticImage
                                 src="../../static/images/daily.png"
@@ -196,8 +207,7 @@ const Main = () => {
                                 placeholder="none"
                             />
                         }
-                        description="Ideal for SME that must guarantee high levels of service"
-                        price="10$ / month"
+                        description="Students can join specific courses to learn about a specific topic"
                     />
                 </PlanSection>
                 <ButtonUnstyled
@@ -206,14 +216,14 @@ const Main = () => {
                     className="flex justify-center"
                 >
                     <span className="text-paletteBlue fill-paletteBlue">
-                        Are you a student? Register with your university email address to get free
-                        access to monthly plan
+                        If you are studing at university, you can join our specific courses. Contact
+                        us to learn more.
                         <ChevronRight />
                     </span>
                 </ButtonUnstyled>
                 <SectionTitle>
                     <span id="download">
-                        Join Notion Time Machine beta!
+                        We'd love to hear from you!
                         <Sparkles className="fill-palettePurple" />
                     </span>
                 </SectionTitle>
@@ -221,8 +231,8 @@ const Main = () => {
                     <Columns columnsNumber={2}>
                         <div className="flex flex-col flex-1 gap-4">
                             <Body>
-                                Be the first to benefit from access to Notion Time Machine by
-                                joining the waiting list.
+                                Please fill out the form below and we will get back to you as soon
+                                as possible to give you more information about our programs.
                             </Body>
                             <EmailForm />
                         </div>
@@ -246,29 +256,20 @@ const Main = () => {
                     </span>
                 </SectionTitle>
                 <FAQ
-                    question="Can I save the backups on my own storage?"
-                    answer="Backup to your own storage will be available in autumn 2023. We plan to make it possible to export data to Google Drive. In the meantime, you should know that Notion Time Machine hosts your data in a fully encrypted (AES 256) manner, making all your data unreadable, even by us."
+                    question="What is Creastel Academy?"
+                    answer="Creastel Academy has been created by Creastel, a software company based in France. We've noticed that more and more developers want to launch their own applications, but don't have the right methods and tools to get started (market research, project management, market launch). Our mission is to train the next generation of SaaS and mobile application makers."
                 />
                 <FAQ
-                    question="Where are backups hosted?"
-                    answer="Backups are hosted at AWS on S3 spaces, fully encrypted using the AES 256 algorithm."
+                    question="Do I need a background in web-development?"
+                    answer="Yes, our programs are designed for people with a background in web-development. Our courses will focus on the product, design, business and market facets of application creation, as well as cross-platform integration technologies."
                 />
                 <FAQ
-                    question="Is there any limit on the number of backups?"
-                    answer="No, Notion Time Machine does not limit the number of backups. You can keep as many backups as you want, for as long as you want. We will soon offer the possibility to define a retention policy to automatically delete backups after a certain period of time."
+                    question="When does the program start?"
+                    answer="The one-year program and apprenticeship program start in September each year. It is not possible to join a current program. However, it is possible to join specific courses during the year. Please contact us to consult our catalog."
                 />
                 <FAQ
-                    question="Who's behind the project?"
-                    answer={
-                        <>
-                            Notion Time Machine is developed by Creastel Labs, a project led by
-                            Grégoire Thibaud and Jean Haberer. Don't hesitate to{' '}
-                            <u>
-                                <a href="mailto:gregoire@creastel.com">contact</a>
-                            </u>{' '}
-                            us.
-                        </>
-                    }
+                    question="How much do the programs cost?"
+                    answer="Please contact us for prices of one-year programs and single courses. The apprenticeship program is fully financed by companies."
                 />
             </MainContainer>
             <Footer />
@@ -283,10 +284,10 @@ export default Main;
 export const Head = () => (
     <>
         <html lang="en" />
-        <title>Notion Time Machine – Making your Notion data safe</title>
+        <title>Creastel Academy – Become the architect of tomorrow's apps</title>
         <meta
             name="description"
-            content="Notion time Machine backup your Notion workspaces automatically to secure things that matter."
+            content="Creastel Academy teach developers to build the applications that will shape the future."
         />
         <meta charSet="utf-8" />
     </>

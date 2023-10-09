@@ -71,15 +71,14 @@ export const EmailForm = () => {
                         disabled={isLoading}
                         type="submit"
                     >
-                        Join the beta
+                        Send me information
                     </button>
                 </TiltingContainer>
             )}
             <p className="text-sm text-gray-500">
-                We will only use your email address to send you the early access notification.
-                Please{' '}
+                We will only use your email address to send you informations. Please{' '}
                 <u>
-                    <a href="mailto:gregoire@creastel.com">contact-us</a>
+                    <a href="mailto:hello@creastel.com">contact us</a>
                 </u>{' '}
                 for any data deletion request.
             </p>

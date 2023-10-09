@@ -6,7 +6,7 @@ export const Footer = () => {
             <div className="flex flex-1">© Creastel Labs – {new Date().getFullYear()}</div>
             <div className="flex gap-6 items-center text-center">
                 <a
-                    href="mailto:gregoire@creastel.com"
+                    href="mailto:hello@creastel.com"
                     className="hover:underline"
                 >
                     Contact

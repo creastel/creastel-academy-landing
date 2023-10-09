@@ -18,7 +18,7 @@ const Subscribe = () => {
                 <BigTitle>Thank you!</BigTitle>
                 <SubTitle>
                     <span>
-                        You have been successfully added to the waiting list
+                        Your email has been sent
                         <Sparkles className="fill-paletteGreen" />
                     </span>
                 </SubTitle>
@@ -26,8 +26,8 @@ const Subscribe = () => {
                     <Columns columnsNumber={2}>
                         <div className="flex flex-col flex-1 gap-4">
                             <Body>
-                                You will be notified as soon by our team to access Notion Time
-                                Machine.
+                                Our team will contact you very soon to give you more information
+                                about our programs.
                                 <br />
                                 See you soon!
                             </Body>
@@ -56,10 +56,10 @@ export default Subscribe;
 export const Head = () => (
     <>
         <html lang="en" />
-        <title>Notion Time Machine – See you soon</title>
+        <title>Creastel Academy – See you soon</title>
         <meta
             name="description"
-            content="Notion time Machine backup your Notion workspaces automatically to secure things that matter."
+            content="Creastel Academy teach developers to build the applications that will shape the future."
         />
         <meta charSet="utf-8" />
     </>

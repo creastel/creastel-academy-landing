@@ -10,11 +10,10 @@ type PlanProps = {
     image: ReactNode;
     title: string;
     description: string;
-    price: string;
     to: string;
 };
 
-export const Plan = ({ image, title, description, price, to }: PlanProps) => {
+export const Plan = ({ image, title, description, to }: PlanProps) => {
     return (
         <TiltingContainer className="caaaard flex-1 rounded-lg bg-surfaceSecondary">
             <Link
@@ -24,13 +23,12 @@ export const Plan = ({ image, title, description, price, to }: PlanProps) => {
                 <CardTitle>{title}</CardTitle>
                 {image}
                 <Body>{description}</Body>
-                <CardTitle>{price}</CardTitle>
                 <Button
                     className="w-full bg-paletteBlue rounded-lg"
                     to={to}
                 >
                     <span>
-                        Get Started
+                        Contact us
                         <ArrowRight className="fill-surfacePrimary mb-1" />
                     </span>
                 </Button>
