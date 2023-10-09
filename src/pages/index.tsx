@@ -65,8 +65,8 @@ const Main = () => {
                     <Problem
                         image={
                             <StaticImage
-                                src="../../static/images/bulb.jpg"
-                                alt="Bulb image"
+                                src="../../static/images/code.jpg"
+                                alt="Code image"
                                 height={100}
                                 placeholder="none"
                                 backgroundColor={BACKGROUND_DEFAULT}
@@ -78,8 +78,8 @@ const Main = () => {
                     <Problem
                         image={
                             <StaticImage
-                                src="../../static/images/coffee.jpg"
-                                alt="Coffee image"
+                                src="../../static/images/notes.jpg"
+                                alt="Notes image"
                                 height={100}
                                 placeholder="none"
                                 backgroundColor={BACKGROUND_DEFAULT}
@@ -91,8 +91,8 @@ const Main = () => {
                     <Problem
                         image={
                             <StaticImage
-                                src="../../static/images/error.jpg"
-                                alt="Error image"
+                                src="../../static/images/bulb.jpg"
+                                alt="Bulb image"
                                 height={100}
                                 placeholder="none"
                                 backgroundColor={BACKGROUND_DEFAULT}
@@ -111,7 +111,7 @@ const Main = () => {
                 <Feature
                     image={
                         <StaticImage
-                            src="../../static/images/clock.jpg"
+                            src="../../static/images/teacher.jpg"
                             alt="Clock image"
                             height={120}
                             placeholder="none"
@@ -132,7 +132,7 @@ const Main = () => {
                 <Feature
                     image={
                         <StaticImage
-                            src="../../static/images/files.jpg"
+                            src="../../static/images/computer.jpg"
                             alt="Pedagogical expertise"
                             height={120}
                             placeholder="none"
@@ -147,7 +147,7 @@ const Main = () => {
                 <Feature
                     image={
                         <StaticImage
-                            src="../../static/images/computer.jpg"
+                            src="../../static/images/connect.jpg"
                             alt="Networking and collaboration"
                             height={120}
                             placeholder="none"
